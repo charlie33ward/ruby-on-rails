@@ -20,9 +20,16 @@
     <div class="relative col-span-2 h-full w-full px-2 pb-2 bg-red-900 rounded-lg flex flex-col">
         <div class="w-full left-0 text-left text-white font-semibold mb-2">User's Notes</div>
         <div class="absolute w-full top-6 left-0 h-[2px] bg-white"></div>
-        <div class="w-full flex flex-row text-white gap-2 hover:cursor-pointer hover:bg-opacity-30 rounded-lg hover:bg-slate-800 items-center">
-            <p style="transform: rotate(-135deg)" class="justify-start">&#8735;</p>
+        <div class="w-full h-6 flex flex-row text-white gap-1 hover:cursor-pointer hover:bg-opacity-30 rounded-lg hover:bg-slate-800 items-center">
+            <div class="h-4 aspect-square align-middle">
+                <%= inline_svg_tag "symbols/chevron-right.svg", class: "w-full h-full" %>
+            </div>
             <p class="text-sm font-normal">Dropdown Folder</p>
+        </div>
+        <div class="w-full h-6 flex flex-row text-white gap-1 hover:cursor-pointer hover:bg-opacity-30 rounded-lg hover:bg-slate-800 items-center">
+            <div class="h-4 aspect-square align-middle">
+            </div>
+            <p class="text-sm font-normal">Daily Note</p>
         </div>
         
         <%# <div class="h-full w-full flex flex-col bg-orange-300">
